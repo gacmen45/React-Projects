@@ -1,0 +1,40 @@
+@import '../../../../assets/styles/_colors';
+
+.cart-btn {
+	position: relative;
+	display: flex;
+	margin-right: 0.5em;
+	padding: 1em;
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	:hover .cart-btn__icon {
+		color: $main-color;
+	}
+
+	&__icon {
+		font-size: 2.5rem;
+		color: black;
+		transition: color 0.5s;
+
+	}
+
+	&__items {
+		position: absolute;
+		top: 3px;
+		left: 32px;
+		width: 20px;
+		padding: 0.1em;
+		font-weight: bold;
+		background-color: $main-color;
+		border-radius: 50%;
+
+		@media (min-width: 576px) {
+			top: 0;
+			left: 33px;
+			width: 25px;
+			padding: 0.3em;
+		}
+	}
+}

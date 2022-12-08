@@ -1,0 +1,57 @@
+@import './../../../assets/styles/_colors';
+
+.product {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	align-items: center;
+	padding: 1em;
+	margin: 2em;
+	cursor: pointer;
+	transition: all 0.5s;
+
+	&:hover {
+		border: 1px solid $border-color;
+		box-shadow: 3px 3px 3px $border-color;
+	}
+    &:hover .product__price-btn {
+        opacity: 1;
+    }
+
+	&__name {
+		color: $main-font-color;
+		padding: 1em;
+		font-size: 2rem;
+	}
+	&__img {
+		width: 250px;
+		height: 250px;
+		object-fit: scale-down;
+		padding: 1em;
+	}
+	&__text {
+		color: $main-font-color;
+		font-size: 1.8rem;
+		padding: 0.5em;
+	}
+
+	&__price {
+		display: flex;
+		align-items: center;
+
+		&-txt {
+			font-weight: bold;
+			font-size: 2rem;
+			margin-right: 5em;
+			color: $main-font-color;
+		}
+		&-btn {
+			opacity: 0;
+			transition: opacity 0.5s;
+			color: $main-color;
+		}
+	}
+}

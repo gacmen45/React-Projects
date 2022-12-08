@@ -1,0 +1,25 @@
+@import '../../../assets/styles/_colors';
+
+
+.btn{
+	cursor: pointer;
+			margin: 1em;
+			padding: 1em ;
+			width: 200px;
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			font-weight: bold;
+			border-radius: 8px;
+			border: 1px solid $border-color;
+			box-shadow: 3px 3px 3px  $border-color;
+			transition: all 0.5s;
+
+			@media(min-width:576px){
+				padding: 1em 2em;
+				width: auto;
+			}
+			&:hover {
+				background-color: $main-color;
+				color: white;
+			}
+        }

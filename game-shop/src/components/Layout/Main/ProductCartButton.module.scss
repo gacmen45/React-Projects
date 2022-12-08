@@ -1,0 +1,19 @@
+@import './../../../assets/styles/_colors';
+
+.cart-btn {
+	border: 1px solid $main-color;
+	border-radius: 50%;
+	transition: 0.5s;
+
+	&:hover {
+		background-color: $main-color;
+	}
+	&:hover .cart-btn__icon {
+		color: white;
+	}
+	&__icon {
+		font-size: 1.5rem;
+		padding: 0.5em;
+		transition: color 0.5s;
+	}
+}

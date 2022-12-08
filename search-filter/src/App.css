@@ -1,0 +1,20 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+}
+
+input {
+	margin: 2em 0 1em 0;
+	width: 200px;
+	height: 30px;
+	font-size: 20px;
+	padding-left: 1em;
+}
+
+p {
+	margin: 3px;
+    font-size: 18px;;
+}

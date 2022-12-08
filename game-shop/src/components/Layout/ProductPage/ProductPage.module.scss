@@ -1,0 +1,139 @@
+@import '../../../assets/styles/_colors';
+
+.product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 12em;
+	margin-bottom: 5rem;
+	padding: 1em;
+	@media(min-width:576px){
+		margin-top: 10em;
+	}
+	
+
+	@media (min-width: 992px) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	&__gallery {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin: 2em;
+		padding: 1em 4em;
+		max-width: 90%;
+		max-height: 60%;
+		border: 1px solid $border-color;
+		border-radius: 8px;
+		object-fit: scale-down;
+		overflow-x: auto;
+		order: 1;
+
+		@media (min-width: 992px) {
+			flex-direction: column;
+			max-width: 20%;
+			max-height: 500px;
+			overflow-y: auto;
+			overflow-x:hidden;
+			order: 0;
+		}
+
+		&-item {
+			margin: 1em ;
+			padding: 1em;
+			width: 150px;
+			border: 1px solid $border-color;
+			cursor: pointer;
+		}
+	}
+
+	&__hero-img-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 300px;
+		@media(min-width:576px){
+			min-height: 400px;
+		}
+		@media(min-width:992px){
+			min-height: 500px;
+		}
+	}
+
+
+	&__hero-img {
+		max-width: 300px;
+
+		@media (min-width: 576px) {
+			max-width: 400px;
+		}
+		@media (min-width: 992px) {
+			max-width: 500px;
+		}
+
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		max-width: 30%;
+		order: 2;
+
+		@media (min-width: 992px) {
+			order: 0;
+		}
+
+		&-name {
+			font-size: 2.5rem;
+			text-align: center;
+		}
+		&-dev {
+			margin-bottom: 1em;
+			font-size: 1.6rem;
+			text-align: center;
+		}
+
+		h3 {
+			font-size: 1.6rem;
+			margin-bottom: 1em;
+		}
+
+		&-info {
+			display: inline;
+			margin-bottom: 1em;
+			font-size: 1.6rem;
+			font-weight: bold;
+			text-align: center;
+			@media(min-width:992px){
+				align-self: start;
+			}
+
+			span {
+				margin-left: 0.2em;
+				font-weight: normal;
+		
+			}
+
+			&--color {
+				margin-left: 1em;
+				width: 2rem;
+				height: 2rem;
+				border: 1px solid $border-color;
+				border-radius: 5px;
+			}
+		}
+	}
+	&__price {
+		font-size: 4rem;
+		font-weight: bold;
+		color: $main-color;
+	}
+}
+
